@@ -119,7 +119,7 @@ class RubyMappings
         rack.jar
         webmock.jar
         libwebsocket.jar
-      ].map { |jar| File.join("third_party/jruby", jar) }
+      ].map { |jar| File.join("./third_party/jruby/gems", jar) }
 
       args[:require] ||= []
       args[:require] += jars
